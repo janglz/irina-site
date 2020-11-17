@@ -137,6 +137,7 @@ a {
 
 .footer {
     grid-area: foot;
+    z-index: 11;
 }
 
 /*
@@ -215,6 +216,41 @@ a {
     background-size: 60px;
 }
 
+/* ИНФО ОБ УСЛУГАХ  */
+
+.therapy {
+    display: flex;
+    flex-direction: column;
+
+
+    box-sizing: border-box;
+    position: absolute;
+    background: #fafcfb;
+}
+
+#info-adult {
+    display: none;
+}
+
+#info-children {
+    display: none;
+}
+
+#info-family {
+    display: none;
+}
+
+#info-adult:target {
+    display: block;
+}
+
+#info-children:target {
+    display: block;
+}
+
+#info-family:target {
+    display: block;
+}
 
 
 
