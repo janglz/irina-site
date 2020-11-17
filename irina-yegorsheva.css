@@ -47,8 +47,24 @@ p {
     
 }
 
+ul {
+    font-weight: 300;
+    padding: 1rem 6rem 2rem 6rem;
+    margin: 0;
+    list-style-type: ;
+}
+
 h1 {
     font-weight: 400;
+    padding: 2rem 6rem;
+    text-transform: uppercase;
+    font-family: "Amatic SC";
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 30px;
     padding: 2rem 6rem;
     text-transform: uppercase;
     font-family: "Amatic SC";
@@ -68,14 +84,17 @@ a {
 .body-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 80px 3fr 2fr;
+    grid-template-rows: 80px 3fr 2fr 30% 30% 5%;
     grid-template-areas: 
         "top top top top top top"
         "article article article photo photo photo"
-        "col-1 col-1 col-2 col-2 col-3 col-3";
+        "col-1 col-1 col-2 col-2 col-3 col-3"
+        "qual qual qual qual qual qual"
+        "cont cont cont cont cont cont"
+        "foot foot foot foot foot foot";
 
     grid-gap: 30px;
-    height: 100vh;
+    height: 300vh;
     margin: 0;
     padding: 30px;
     box-sizing: border-box;
@@ -129,10 +148,13 @@ a {
 
 .qualification {
     grid-area: qual;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .contacts {
-    grid-area: contacts;
+    grid-area: cont;
 }
 
 .footer {
@@ -218,13 +240,16 @@ a {
 
 /* ИНФО ОБ УСЛУГАХ  */
 
+.info-picture {
+    background: url("icons/icons8-arch-100.png") center no-repeat;
+    background-size: 60px;
+}
+
 .therapy {
-    display: flex;
-    flex-direction: column;
-
-
-    box-sizing: border-box;
     position: absolute;
+    height: 100%;
+    z-index: 4;
+    box-sizing: border-box;
     background: #fafcfb;
 }
 
@@ -241,15 +266,19 @@ a {
 }
 
 #info-adult:target {
-    display: block;
+
+    display: flex;
+    flex-direction: row;
 }
 
 #info-children:target {
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 #info-family:target {
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 
