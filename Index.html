@@ -129,14 +129,32 @@
                 <p class="inline-p"><a class="email" href="mailto:air.aures@gmail.com">air.aures@gmail.com</a></p>
                 <p class="paragraph"> Личные консультации и групповые занятия в Москве, городах Ногинск и Электросталь.</p>
             </section>
-                   
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="user-name" name="user-name">
+                  </li>
+                  <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="user-mail" name="user-mail">
+                  </li>
+                  <li>
+                    <label for="msg">Сообщение:</label>
+                    <textarea id="msg" name="user-message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Отправить</button>
+                  </li>
+                </ul>
+              </form>    
         </article>
        
         <footer class="footer">
             <section class="content">
-            <a class="mini-button href="https://icons8.ru"><div class="icon-mini icons8"></div><div>Иконки: <br><span class="uppercase">Icons8.ru</span></div></a>
-            <a class="mini-button" href="https://github.com/janglz"><div class="icon-mini razrab"></div><div>Разработка и дизайн: <br>ООО ЛУПА МЕДИА</div></a>
-            <a class="mini-button" href="vk"><div class="icon-mini redactor"></div><div>Редактор: <br><span class="uppercase">Малюжинец Саша</span></div></a>
+            <a class="mini-button" href="https://icons8.ru" target="_blank"><div class="icon-mini icons8"></div><div>Иконки: <br><span class="uppercase">Icons8.ru</span></div></a>
+            <a class="mini-button" href="https://github.com/janglz" target="_blank"><div class="icon-mini razrab"></div><div>Разработка и дизайн: <br>ООО ЛУПА МЕДИА</div></a>
+            <a class="mini-button" href="vk" target="_blank"><div class="icon-mini redactor"></div><div>Редактор: <br><span class="uppercase">Малюжинец Саша</span></div></a>
             </section>
         </footer>
     </div>  

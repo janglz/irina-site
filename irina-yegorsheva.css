@@ -66,7 +66,7 @@ h1 {
 h3 {
     font-weight: 400;
     font-size: 30px;
-    padding: 2rem 6rem;
+    padding: 3rem 6rem 1rem 6rem;
     text-transform: uppercase;
     font-family: "Amatic SC";
     margin: 0;
@@ -155,10 +155,12 @@ a {
     display: flex;
     flex-direction: row;
     position: relative;
+    overflow: auto;
 }
 
 .contacts {
     grid-area: cont;
+    text-align: center;
 }
 
 .footer {
@@ -202,8 +204,8 @@ a {
 
 
 /*  РАЗДЕЛЫ С ИНФО ОБ УСЛУГАХ  */
-.big-button {
 
+.big-button {
     display: flex;
     height: 100%;
     flex-direction: row;
@@ -212,6 +214,9 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;  
+   
+    border-bottom: 10px solid #fafcfb00;
+    /*background: linear-gradient(#fafcfb, #eff5f5);*/
 }
 
 .big-button p {
@@ -221,7 +226,11 @@ a {
     margin: 0;
     font-size: 24px;
     text-align: center;
+}
 
+.big-button:hover p {
+    font-size: 26px;
+    transition: ease-out 0.1s;
 }
 
 .icon{
@@ -356,6 +365,8 @@ a {
     background-size: 50px;
 }
 
+/* ФОРМА */
+
 
 
 
@@ -377,7 +388,7 @@ a {
     align-self: center;
     justify-content: start;
     box-sizing: content-box;
-    height: 60%;
+    height: 30%;
     flex-basis: 250px;
     margin: 30px 0;
     border-bottom: 0.3rem solid #5f8a8a00;
