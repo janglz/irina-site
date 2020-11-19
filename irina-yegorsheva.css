@@ -1,4 +1,4 @@
-.a* {
+ {
     border: 1px solid red;
 }
 
@@ -83,6 +83,12 @@ a {
     text-transform: uppercase;
 }
 
+.main-logo {
+    position: relative;
+    display: block;
+    margin-right: auto;
+}
+
 /*  ОСНОВНАЯ СЕТКА  */
 
 
@@ -115,6 +121,7 @@ a {
     justify-content: flex-end;
     flex-wrap: wrap;  
     box-shadow: 0 30px 0 #ebf1f3;
+    
 }
 
 .main-article {
@@ -572,7 +579,206 @@ a:active {
     border-bottom: 0.3rem solid #dbe6e6;
 }
 
+/* МЕДИАЗАПРОСЫ */
 
-.main-photo .img {
+@media (max-width: 1024px) and (min-width: 727px) and (min-height: 499px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 80px 45vh 20vh auto auto 5%;
+        grid-template-areas: 
+            "top top top top top top"
+            "article article article article photo photo"
+            "col-1 col-1 col-2 col-2 col-3 col-3"
+            "qual qual qual qual qual qual"
+            "cont cont cont cont cont cont"
+            "foot foot foot foot foot foot";
+    
+        grid-gap: 30px;
+        height: 260vh;
+        margin: 0;
+        padding: 30px;
+        box-sizing: content-box;
+    }
 
+    .top, .main-article, .qualification, .contacts, .footer, .content, h1, h3, p, ul {
+        box-sizing: border-box;
+        padding: 0.5rem 0.5rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    p, li {
+        font-size: 0.9em;
+    }
+
+    h1, h3 {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+
+    .inline-p {
+        width: 210px;
+        margin-bottom: 5px;
+        padding: 0px;
+    }
+
+    form {
+        padding: 0.5rem 0.5rem;  
+    }
+
+    .main-logo {
+        position: absolute;
+        display: none;
+    }
+
+
+    .icon {
+        background-size: 30%;
+    }
+
+
+    .big-button p {
+        flex-basis: 400px;
+        height: 50%;
+        font-size: 0.9em;
+        font-weight: 300;
+
+    }
+    
+    
+    .icon{
+        min-width: 100px;
+        min-height: 60px;
+        max-height: 50%;
+    }
+
+
+    .info-picture {
+        background: url("icons/icons8-books-96.png") 1rem 5px no-repeat;
+        background-size: 30px;
+    }
+    
+    .work-picture {
+        background: url("icons/icons8-work-table-100.png") 1rem 5px no-repeat;
+        background-size: 30px;
+    }
+
+    .container h1 {
+        padding-left: 4rem;
+    }
+    
+    .footer .content {
+        width: 100%;
+        margin: 0 0.5rem;
+    }
+
+    .main-article {
+        overflow: hidden;
+    }
+        
+.column
 }
+
+@media (max-width: 727px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 10% auto auto auto 45% 20% auto;
+        grid-template-areas: 
+            "top"
+            "article"
+            "photo"
+            "col-1"
+            "col-2"
+            "col-3"
+            "qual"
+            "cont"
+            "foot";
+        height: 550vh;
+        grid-gap: 5px;
+        margin: 0;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .top, .main-article, .qualification, .contacts, .footer, .content, h1, h3, p, ul, li {
+        box-sizing: border-box;
+        padding: 0.5rem 0.5rem;
+        margin: 0 auto;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top, .qualification, {
+        overflow: initial;
+    }
+
+    p, ul, li {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+a {
+    border: 1px solid #dbe6e6;
+    border-radius: 5px;
+}
+
+    .qualification p {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .container {
+        display: block;
+        position: relative;
+        flex-direction: column;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .top ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+.top {
+        box-shadow: none;
+}
+
+    .qualification { 
+        overflow: none;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+   
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .mini-button {
+        width: 100%;
+        margin: 5px auto;
+    }
+    
+    .main-logo {
+        position: fixed;
+        top: 5%;
+        right: 5%;
+    }
