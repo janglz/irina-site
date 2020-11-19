@@ -83,6 +83,12 @@ a {
     text-transform: uppercase;
 }
 
+.main-logo {
+    position: relative;
+    display: block;
+    margin-right: auto;
+}
+
 /*  ОСНОВНАЯ СЕТКА  */
 
 
@@ -115,6 +121,7 @@ a {
     justify-content: flex-end;
     flex-wrap: wrap;  
     box-shadow: 0 30px 0 #ebf1f3;
+    
 }
 
 .main-article {
@@ -761,11 +768,8 @@ a {
 
     .content {
         display: flex;
-
         flex-wrap: wrap;
         flex-direction: row;
-        
-   
     }
 
     .mini-button {
@@ -774,7 +778,7 @@ a {
     }
     
     .main-logo {
-        position: absolute;
+        position: fixed;
         top: 5%;
         right: 5%;
     }
