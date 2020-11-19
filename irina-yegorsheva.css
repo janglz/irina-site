@@ -1,4 +1,4 @@
-* {
+s* {
     border: 1px solid red;
 }
 
@@ -28,7 +28,8 @@
 body {
     background: #ebf1f3;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -88,7 +89,7 @@ a {
 .body-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 80px 3fr 2fr 30% 30% 5%;
+    grid-template-rows: 80px 60vh 20vh auto auto 5%;
     grid-template-areas: 
         "top top top top top top"
         "article article article photo photo photo"
@@ -98,7 +99,7 @@ a {
         "foot foot foot foot foot foot";
 
     grid-gap: 30px;
-    height: 300vh;
+    height: 260vh;
     margin: 0;
     padding: 30px;
     box-sizing: content-box;
@@ -128,7 +129,9 @@ a {
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    background: none;
+    background: url('img/irina-foto-1.jpg');
+    background-size: cover;
+   
 
 }
 
@@ -138,6 +141,8 @@ a {
     height: 100%;
     flex-shrink: 1;
 }
+
+
 
 .col-1 {
     grid-area: col-1;
@@ -156,12 +161,15 @@ a {
     display: flex;
     flex-direction: row;
     position: relative;
-    overflow: auto;
+    align-content: stretch;
+    width: 100%;
+    
 }
 
 .contacts {
     grid-area: cont;
     text-align: center;
+    min-height: 85vh;
 }
 
 .footer {
@@ -183,6 +191,8 @@ a {
 
 .main-article {
     position: relative;
+    min-height: 100%;
+    overflow: auto;
 }
 
 
@@ -199,6 +209,52 @@ a {
 .pop-up-url:hover .pop-up-info {
     display: block;
     min-width: 400;
+}
+
+/* КВАЛИФИКАЦИЯ */
+
+.qualification p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    ma x-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1200px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.qualification p:last-child {
+    margin-bottom: 3rem;
+}
+
+li, li > ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+li > ul {
+    padding-left: 3rem;
+    background-color: #ebf1f39d;
+}
+
+.container + ul + li::before {
+    content: " ";
+    padding-left: 2rem;
+    background: url('icons/icons8-ereader-96.png') left center no-repeat;
+    background-size: 20px;
+}
+
+li ~ ul ~ li::before {
+    content: " ";
+    padding-left: 2rem;
+    background-image: none;
 }
 
 
@@ -226,13 +282,14 @@ a {
     height: 40%;
     padding: 0;
     margin: 0;
-    font-size: 24px;
+    font-size: 1em;
+    font-weight: 300;
     text-align: center;
 }
 
 
 .icon{
-    min-width: 150px;
+    min-width: 100px;
     min-height: 60px;
     max-height: 50%;
 }
@@ -255,8 +312,8 @@ a {
 /* ИНФО ОБ УСЛУГАХ  */
 
 .info-picture {
-    background: url("icons/icons8-arch-100.png") center no-repeat;
-    background-size: 60px;
+    background: url("icons/icons8-books-96.png") 50px 45px no-repeat;
+    background-size: 50px;
 }
 
 .therapy {
@@ -349,6 +406,10 @@ a {
     border-bottom: 5px solid #fafcfb00
 }
 
+.inline-p {
+    padding: 1rem;
+}
+
 
 .whatsapp {
     background: url("icons/icons8-whatsapp-100.png") 0% 50% no-repeat;
@@ -365,8 +426,79 @@ a {
 
 /* ФОРМА */
 
+.form-box {
+    display: flex;
+    margin: 0 auto;
+    z-index: 22;
+}
 
+form {
+    /* Расположим форму по центру страницы */
+    margin: 0 auto 30px auto;
+    flex-basis: 800px;
+    /* Определим контур формы */
+    padding: 1em;
+    background: #ebf1f3;
+    border-radius: 5px;
+  }
+  
+  form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Определим размер и выравнивание */
+    display: inline-block;
+    text-align: left;
+    margin-right: auto;
+    width: 500px;
+    font-size: 1em;
+  }
+  
+  input, 
+  textarea {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    width: 500px;
+    box-sizing: border-box;
+    border: 1px solid #353636;
+  }
+  
+  input:focus, 
+  textarea:focus {
+    border-color: rgb(147, 191, 197);
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+ 
+.submit-button {
+    background: #ebf1f3;
+    border-radius: 5px;
+    padding: 20px 40px;
+    border: none;
+    box-shadow: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: #fafcfb;
+}
 
+.submit-button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #5e868650; 
+    transition: color .1s ease-in, background-color .1s ease-in;
+}
 
 /* ФУТЕР */
 
