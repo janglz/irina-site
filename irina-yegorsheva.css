@@ -1,6 +1,6 @@
- {
+/* {
     border: 1px solid red;
-}
+}*/
 
 .body-grid > * {
     background: #fafcfb;
@@ -52,7 +52,6 @@ ul {
     font-weight: 300;
     padding: 1rem 6rem 2rem 6rem;
     margin: 0;
-    list-style-type: ;
 }
 
 h1 {
@@ -677,8 +676,7 @@ a:active {
         overflow: hidden;
     }
         
-.column
-}
+
 
 @media (max-width: 727px) {
     .body-grid {
@@ -711,10 +709,6 @@ a:active {
         flex-direction: column;
         position: relative;
         overflow: hidden;
-    }
-
-    .top, .qualification, {
-        overflow: initial;
     }
 
     p, ul, li {
