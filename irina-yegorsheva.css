@@ -1,4 +1,4 @@
-s* {
+.a* {
     border: 1px solid red;
 }
 
@@ -221,7 +221,7 @@ a {
 }
 
 .container {
-    ma x-width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     flex-basis: 1200px;
@@ -240,7 +240,7 @@ li, li > ul {
 }
 
 li > ul {
-    padding-left: 3rem;
+    padding-left: 4rem;
     background-color: #ebf1f39d;
 }
 
@@ -255,6 +255,10 @@ li ~ ul ~ li::before {
     content: " ";
     padding-left: 2rem;
     background-image: none;
+}
+
+.container h1 {
+    padding-left: 10rem;
 }
 
 
@@ -312,7 +316,12 @@ li ~ ul ~ li::before {
 /* ИНФО ОБ УСЛУГАХ  */
 
 .info-picture {
-    background: url("icons/icons8-books-96.png") 50px 45px no-repeat;
+    background: url("icons/icons8-books-96.png") 6rem 45px no-repeat;
+    background-size: 50px;
+}
+
+.work-picture {
+    background: url("icons/icons8-work-table-100.png") 6rem 45px no-repeat;
     background-size: 50px;
 }
 
