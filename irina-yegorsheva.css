@@ -675,7 +675,7 @@ a:active {
     .main-article {
         overflow: hidden;
     }
-        
+}       
 
 
 @media (max-width: 727px) {
@@ -776,3 +776,4 @@ a {
         top: 5%;
         right: 5%;
     }
+}
