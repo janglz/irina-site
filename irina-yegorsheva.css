@@ -791,7 +791,7 @@ a:active {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 360px 500px 300px 70px 70px 70px auto 800px 300px;
+        grid-template-rows: 360px auto 400px 70px 70px 70px auto 800px 300px;
         grid-template-areas: 
             "top"
             "article"
@@ -802,7 +802,7 @@ a:active {
             "qual"
             "cont"
             "foot";
-     
+        height: 100%;
         grid-gap: 5px;
         margin: 0;
         padding: 5px;
@@ -832,13 +832,13 @@ a:active {
             display: flex;
             flex-direction: column;
             position: relative;
-            overflow: scroll;
+            overflow: none;
         }
     
-        p, ul, li, .big-button > p{
+        p, ul, li, h1, h2, .big-button > p {
             font-size: 24px;
             font-weight: 400;
-            overflow: scroll;
+            
             line-height: 1.1em;
         }
        
@@ -847,11 +847,16 @@ a:active {
         display: none;
     }
 
-    form, label {
+    form, label, input, textarea {
         padding: 5px;
-        width: 370px;
+        width: 100%;
         margin-bottom: 5px;
     }
+
+    .form-box {
+        width: 95%;
+    }
+
     .content {
         display: flex;
         flex-wrap: wrap;
