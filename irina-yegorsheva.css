@@ -791,11 +791,12 @@ a:active {
 
     body {
         font-size: 16px;
+ 
     }
 
     .body-grid {
         display: grid;
-        grid-template-columns: 400px;
+        grid-template-columns: minmax(400px, 800px);
         grid-template-rows: 360px auto auto 70px 70px 70px auto auto 300px;
         grid-template-areas: 
             "top"
@@ -808,7 +809,7 @@ a:active {
             "cont"
             "foot";
         height: 100%;
-        
+        width: 100%;
         grid-gap: 5px;
         margin: 0;
         padding: 5px;
