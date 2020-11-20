@@ -717,15 +717,19 @@ a:active {
         overflow: hidden;
     }
 
-    p, ul, li {
-        font-size: 18px;
+    p, ul, li, .big-button > p {
+        font-size: 22px;
         font-weight: 400;
     }
 
-a {
-    border: 1px solid #dbe6e6;
-    border-radius: 5px;
-}
+    br {
+        display: none;
+    }
+
+    a {
+        border: 1px solid #dbe6e6;
+        border-radius: 5px;
+    }
 
     .qualification p {
         padding-top: 0;
@@ -747,9 +751,9 @@ a {
         position: relative;
     }
 
-.top {
+    .top {
         box-shadow: none;
-}
+    }
 
     .qualification { 
         overflow: none;
@@ -783,7 +787,7 @@ a {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px), (max-device-width : 568px) {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
