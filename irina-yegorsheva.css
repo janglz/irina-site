@@ -787,7 +787,7 @@ a:active {
     }
 }
 
-@media (max-width: 400px), (max-device-width : 800px) {
+@media (max-width: 700px), (max-device-width : 800px) {
 
     body {
         font-size: 16px;
@@ -795,7 +795,7 @@ a:active {
 
     .body-grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 400px;
         grid-template-rows: 360px auto auto 70px 70px 70px auto auto 300px;
         grid-template-areas: 
             "top"
