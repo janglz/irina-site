@@ -787,11 +787,16 @@ a:active {
     }
 }
 
-@media (max-width: 400px), (max-device-width : 800px) {
+@media /*(max-width: 400px), (max-device-width : 800px)*/ {
+
+    body {
+        font-size: 16px;
+    }
+
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 360px auto 400px 70px 70px 70px auto 800px 300px;
+        grid-template-rows: 360px auto auto 70px 70px 70px auto auto 300px;
         grid-template-areas: 
             "top"
             "article"
@@ -803,6 +808,7 @@ a:active {
             "cont"
             "foot";
         height: 100%;
+        
         grid-gap: 5px;
         margin: 0;
         padding: 5px;
@@ -824,7 +830,13 @@ a:active {
         
     }
 
-        .top, .main-article, .qualification, .contacts, .content, h1, h3, p, ul, li {
+    .main-photo {
+        margin: 0 auto;
+        height: 400px;
+        width: 380px
+    }
+
+        .top, .main-article, .qualification, .contacts, .content, h1, h3, p, ul, li, .flex-container {
             box-sizing: border-box;
             padding: 0.5rem 0.5rem;
             margin: 0 auto;
@@ -835,11 +847,15 @@ a:active {
             overflow: none;
         }
     
-        p, ul, li, h1, h2, .big-button > p {
+        p, ul, li, h1, h2, h3, .big-button > p {
             font-size: 24px;
             font-weight: 400;
             
             line-height: 1.1em;
+        }
+
+        h1, h3 {
+            padding-top: 0.5em;
         }
        
     .main-logo {
@@ -853,10 +869,13 @@ a:active {
         margin-bottom: 5px;
     }
 
-    .form-box {
+    .form-box, .inline-p {
         width: 95%;
+        overflow: hidden;
     }
 
+
+    
     .content {
         display: flex;
         flex-wrap: wrap;
