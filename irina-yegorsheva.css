@@ -787,11 +787,11 @@ a:active {
     }
 }
 
-@media (max-width: 400px), (max-device-width : 568px) {
+@media (max-width: 400px), (max-device-width : 800px) {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 6% 70px 70px 70px 45% 15% auto;
+        grid-template-rows: 360px 500px 300px 70px 70px 70px auto 800px 300px;
         grid-template-areas: 
             "top"
             "article"
@@ -802,11 +802,12 @@ a:active {
             "qual"
             "cont"
             "foot";
-        height: 640vh;
+     
         grid-gap: 5px;
         margin: 0;
         padding: 5px;
         box-sizing: border-box;
+
     }
     
     br {
@@ -831,17 +832,16 @@ a:active {
             display: flex;
             flex-direction: column;
             position: relative;
-            overflow: auto;
+            overflow: scroll;
         }
     
-        p, ul, li {
-            font-size: 16px;
+        p, ul, li, .big-button > p{
+            font-size: 24px;
             font-weight: 400;
             overflow: scroll;
             line-height: 1.1em;
         }
-   
-
+       
     .main-logo {
         position: fixed;
         display: none;
@@ -850,8 +850,7 @@ a:active {
     form, label {
         padding: 5px;
         width: 370px;
-        margin-top: -10px;
-        margin-bottom: -10px;
+        margin-bottom: 5px;
     }
     .content {
         display: flex;
