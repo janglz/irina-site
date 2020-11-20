@@ -141,13 +141,13 @@ a {
 
 }
 
-.main-photo img {
+/*.main-photo img {
     position: absolute;
     width: auto;
     height: 100%;
     flex-shrink: 1;
 }
-
+*/
 
 
 .col-1 {
@@ -791,12 +791,11 @@ a:active {
 
     body {
         font-size: 16px;
- 
     }
 
     .body-grid {
         display: grid;
-        grid-template-columns: minmax(400px, 800px);
+        grid-template-columns: 400px;
         grid-template-rows: 360px auto auto 70px 70px 70px auto auto 300px;
         grid-template-areas: 
             "top"
@@ -834,7 +833,7 @@ a:active {
     .main-photo {
         margin: 0 auto;
         height: 400px;
-        width: 380px
+        width: 400px
     }
 
         .top, .main-article, .qualification, .contacts, .content, h1, h3, p, ul, li, .flex-container {
