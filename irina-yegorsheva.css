@@ -684,7 +684,7 @@ a:active {
 }       
 
 
-@media (max-width: 680px) {
+@media (max-width: 680px), (max-device-width : 1024px) {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -783,7 +783,7 @@ a {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr;
