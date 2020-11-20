@@ -787,7 +787,7 @@ a:active {
     }
 }
 
-@media /*(max-width: 400px), (max-device-width : 800px)*/ {
+@media (max-width: 400px), (max-device-width : 800px) {
 
     body {
         font-size: 16px;
