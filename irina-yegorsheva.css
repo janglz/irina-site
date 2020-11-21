@@ -153,7 +153,7 @@ a {
     grid-area: col-3;
 }
 
-.qualification {
+.info-block {
     grid-area: qual;
     display: flex;
     flex-direction: row;
@@ -203,7 +203,7 @@ a {
 
 /* КВАЛИФИКАЦИЯ */
 
-.qualification p {
+.qualification p, .info-block > p {
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
@@ -211,12 +211,15 @@ a {
 }
 
 .container {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 1200px;
-    justify-items: center;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container div {
+    flex-basis: 730px;
 }
 
 .qualification p:last-child {
@@ -314,9 +317,17 @@ li ~ ul ~ li::before {
 .therapy {
     position: absolute;
     height: 100%;
+    width: 100%;
     z-index: 4;
     box-sizing: border-box;
     background: #fafcfb;
+}
+
+.box{
+    width: 750px;
+    margin: 10% auto;
+    text-align: justify;
+    background: #ebf1f3;
 }
 
 #info-adult {
@@ -340,11 +351,13 @@ li ~ ul ~ li::before {
 #info-children:target {
     display: flex;
     flex-direction: row;
+
 }
 
 #info-family:target {
     display: flex;
     flex-direction: row;
+    flex-basis: 750px;
 }
 
 
@@ -835,6 +848,8 @@ a:active {
 
         h1, h3 {
             padding-top: 0.5em;
+            font-size: 26px;
+            font-weight: 400;
         }
        
     .main-logo {
