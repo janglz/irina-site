@@ -328,10 +328,12 @@ li ~ ul ~ li::before {
     margin: 10% auto;
     text-align: justify;
     background: #ebf1f3;
+    
 }
 
 #info-adult {
     display: none;
+
 }
 
 #info-children {
@@ -343,21 +345,31 @@ li ~ ul ~ li::before {
 }
 
 #info-adult:target {
-
     display: flex;
     flex-direction: row;
+    background: url("img/a-female-office-worker-meditating-at-the-table.jpg") no-repeat center;
+    background-size: cover;
 }
+
+.opacity {
+    width: 100%;
+background-color: #fafcfbde;
+}
+
 
 #info-children:target {
     display: flex;
     flex-direction: row;
-
+    background: url('img/my-dear-master-its-time-to-buy-me-a-pair-of-boots-and-change-our-lives-for-the-better.jpg') no-repeat center;
+    background-size: cover;
 }
 
 #info-family:target {
     display: flex;
     flex-direction: row;
-    flex-basis: 750px;
+    /*flex-basis: 750px;*/
+    background: url('img/when-you-are-tired-of-relationship.jpg') no-repeat center;
+    background-size: cover;
 }
 
 
@@ -868,7 +880,10 @@ a:active {
         overflow: hidden;
     }
 
-
+    .box {
+        width: 400px;
+        padding: 5px;
+    }
     
     .content {
         display: flex;
