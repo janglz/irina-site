@@ -4,6 +4,7 @@
         <title>ПСИХОЛОГИЯ | Блог Ирины Егоршевой</title>
         <meta charset="utf-8">
         <meta name = "viewport" content = "width = device-width">
+        <link rel="icon" href="/favicon.ico" type="image/ico" sizes="any">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="irina-yegorsheva.css">
     </head>
@@ -25,15 +26,15 @@
         </header>
 
         <article class="main-article">
-            <h1>Психологический блог</h1>
+            <h1>Психологические консультации</h1>
             <p>Здравствуйте! Меня зовут Ирина Егоршева, я - <span class="bold">клинический психолог.</span> 
-                Бережно работаю с психикой с помощью <a class ="pop-up-url" href="#eot-info">эмоционально-образной терапии.</a></p>
-                <article class="pop-up-info" id="eot-info"></p>
-                    <p><span class="bold">Эмоционально-образная терапия</span><br>
+                Бережно работаю с психикой с помощью <a class ="dotted-url" href="#eot-info" onmouseover="popUpByHover()">эмоционально-образной терапии.</a></p>
+                <div class="pop-up-info" id="eot-info"></p>
+                    <p onmouseout="popUpHide()"><span class="bold">Эмоционально-образная терапия</span>
                         — современная ветвь психотерапии, в основе которой лежит воздействие на психосоматическое состояние 
                         посредством работы с образами</p>
-                </article>
-                 <p>Моя работа - психологическая помощь взрослым и детям. Индивидуальное и семейное консультирование, 
+                </div>
+                 <p onmouseover="popUpHide()">Моя работа - психологическая помощь взрослым и детям. Индивидуальное и семейное консультирование, 
                 психотерапия и коррекционно-развивающие занятия. Работаю в Ногинске, Электростали и Москве.</p>
         </article>    
         <div class="main-photo">
@@ -41,7 +42,7 @@
         </div>
 
         <section class="column col-1" id="services">
-            <a class="big-button" href="#info-adult">
+            <a class="big-button" href="#info-adult" onclick="scrollToBigButtons()">
                 <div class="icon individ">    
                 </div>
                 <p>Индивидуальные <br>консультации</p>
